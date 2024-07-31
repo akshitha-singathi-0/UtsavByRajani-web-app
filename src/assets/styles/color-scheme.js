@@ -1,0 +1,1 @@
+export const c1 = "#dd0075";

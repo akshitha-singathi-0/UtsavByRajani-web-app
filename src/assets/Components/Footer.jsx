@@ -1,9 +1,10 @@
 import React from "react";
+import {c1} from '../styles/color-scheme';
 
 const Footer = () => {
     return (
     <div>
-        <footer class="text-center text-lg-start text-muted" style={{backgroundColor:"#dd0075"}}>
+        <footer class="text-center text-lg-start text-muted" style={{backgroundColor:c1}}>
         
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             
