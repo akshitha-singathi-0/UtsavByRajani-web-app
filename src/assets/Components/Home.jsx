@@ -4,8 +4,11 @@ import WorkInProgress from './WorkInProgress';
 const Home = () => {
     return (
         <div>
-            <h3>Home Page</h3>
-            <WorkInProgress></WorkInProgress>
+            <div>
+                <h1>Compelling Headline</h1>
+                <button>View Gallery</button>
+            </div>
+
         </div>
     );
 }
