@@ -1,13 +1,13 @@
 import React from 'react';
 import WorkInProgress from './WorkInProgress';
 
-const Contact = () => {
+const Gallery = () => {
     return (
         <div>
-            <h3>Contact</h3>
+            <h3>Gallery</h3>
             <WorkInProgress></WorkInProgress>
         </div>
     );
 }
 
-export default Contact;
+export default Gallery;
