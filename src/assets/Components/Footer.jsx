@@ -109,7 +109,7 @@ const Footer = () => {
         
         <div class="text-center p-4">
             © 2024 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Akshitha Singathi</a>
+            <a class="text-reset fw-bold"> Akshitha Singathi</a>
         </div>
         
         </footer>

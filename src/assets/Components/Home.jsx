@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from './widgets/Carousel';
 import TestimonialCard from './widgets/TestimonialCard';
 
 import testimony_data from '../data/testimonies.json'
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             <div>
                 <h1>Compelling Headline</h1>
+                <Carousel></Carousel>
                 <button>View Gallery</button>
             </div>
             <div>
