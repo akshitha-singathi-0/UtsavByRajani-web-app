@@ -1,4 +1,7 @@
 import React from 'react';
+import TestimonialCard from './widgets/TestimonialCard';
+
+import testimony_data from '../data/testimonies.json'
 
 const Home = () => {
     return (
@@ -15,9 +18,14 @@ const Home = () => {
                 <button>Read More</button>
             </div>
             <div>
-                <div>Card1</div>
-                <div>Card2</div>
-                <div>Card3</div>
+                {
+                    testimony_data.map((testimony) => {
+                        return(
+                        <TestimonialCard data={testimony}></TestimonialCard>
+                        )
+                    })
+                }
+                <button>Read More</button>
             </div>
             <div>Social Media Link</div>
         </div>
