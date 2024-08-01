@@ -1,7 +1,12 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-inline: 3%;
 }
 
+div {
+  outline: 1px dotted blue;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
