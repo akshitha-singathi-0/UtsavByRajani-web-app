@@ -5,11 +5,11 @@ const Home = (props) => {
     return (
         <div>
             <div>
-                <h1>Compelling Headline</h1>
+                <h1>Bringing Your Dream to Reality.</h1>
                 <button>View Gallery</button>
             </div>
             <div>
-                <h3>Engaging Subheading</h3>
+                <h3>Decor for every moment</h3>
             </div>
             <div>
                 <p>Here is a mini paragraph that tells our story.</p>
