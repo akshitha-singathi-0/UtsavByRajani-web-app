@@ -12,9 +12,9 @@ import about_data from './assets/data/about.json';
 
 function App() {
   return (
-    <div>
+    <div class="App">
       <Navbar></Navbar>
-      <div class="App">
+      <div class="InnerBody">
         <Routes>
           <Route path="/" element={<Home data={testimony_data}/>}></Route>
           <Route path="/about" element={<About data={about_data}/>}></Route>

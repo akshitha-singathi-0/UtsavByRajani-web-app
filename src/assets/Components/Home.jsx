@@ -4,12 +4,12 @@ import TestimonialCard from './widgets/TestimonialCard';
 const Home = (props) => {
     return (
         <div>
-            <div>
-                <h1>Bringing Your Dream to Reality.</h1>
+            <div class="homeLanding" >
+                <h1 style={{fontFamily: "bethElingston"}}>Bringing Your Dream to Reality.</h1>
                 <button>View Gallery</button>
             </div>
-            <div>
-                <h3>Decor for every moment</h3>
+            <div class="displaySection">
+                <h3 style={{fontFamily: "bethElingston"}}>Where creativity meets elegance</h3>
             </div>
             <div>
                 <p>Here is a mini paragraph that tells our story.</p>
