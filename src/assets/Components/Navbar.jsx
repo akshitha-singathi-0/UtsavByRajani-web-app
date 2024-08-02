@@ -5,7 +5,7 @@ import {c1} from '../styles/color-scheme';
 const Navbar = () => {
     return (
     <nav class="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:c1}}>
-      <Link class="navbar-brand" to="/">Utsav by Rajani</Link>
+      <Link class="navbar-brand" style={{paddingLeft: "2%"}} to="/">Utsav by Rajani</Link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
