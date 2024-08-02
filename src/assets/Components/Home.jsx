@@ -1,10 +1,7 @@
 import React from 'react';
-import Carousel from './widgets/Carousel';
 import TestimonialCard from './widgets/TestimonialCard';
 
-import testimony_data from '../data/testimonies.json'
-
-const Home = () => {
+const Home = (props) => {
     return (
         <div>
             <div>
@@ -20,7 +17,7 @@ const Home = () => {
             </div>
             <div>
                 {
-                    testimony_data.map((testimony) => {
+                    props.data.map((testimony) => {
                         return(
                         <TestimonialCard data={testimony}></TestimonialCard>
                         )
