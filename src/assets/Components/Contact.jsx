@@ -4,24 +4,25 @@ const Contact = () => {
     return (
         <div>
             <h3>Contact</h3>
-            <div className='section-with-btn'>
-                <label htmlFor="nameComponent">Name</label>
-                <div></div>
-                <input type="text" id="nameComponent" />
-                <div></div>
-                <label htmlFor="emailComponent">Email</label>
-                <div></div>
-                <input type="email" id="emailComponent" />
-                <div></div>
-                <label htmlFor="phoneNumberComponent">Phone</label>
-                <div></div>
-                <input type="text" id="phoneNumberComponent" />
-                <div></div>
-                <label htmlFor="messageComponent">Inquiry</label>
-                <div></div>
-                <input type="text" id="messageComponent" />
-                <div><button>Submit</button></div>
-            </div>
+            <form>
+                <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Name"></input>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="abc@gmail.com"></input>
+                </div>
+                <div class="form-group">
+                    <label for="inputPhoneNumber">Phone</label>
+                    <input type="text" class="form-control" id="inputPhoneNumber" placeholder="(000)-000-0000"></input>
+                </div>
+                <div class="form-group">
+                    <label for="inputInquiry">Inquiry</label>
+                    <input type="text" class="form-control" id="inputInquiry"></input>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     );
 }

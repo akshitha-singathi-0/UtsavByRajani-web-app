@@ -6,14 +6,14 @@ const Home = (props) => {
         <div>
             <div class="homeLanding section-with-btn" >
                 <h1 style={{fontFamily: "bethElingston"}}>Bringing Your Dreams to Reality.</h1>
-                <button>View Gallery</button>
+                <button class="btn-bottom-right">View Gallery</button>
             </div>
             <div class="displaySection">
                 <h3 style={{fontFamily: "bethElingston"}}>Where creativity meets elegance</h3>
             </div>
             <div class="section-with-btn">
                 <h3 class="header-quote" style={{fontFamily: "bethElingston"}}>"Here is a quote from the founder" - Rajani, Founder</h3>
-                <button>Read More</button>
+                <button class="btn-bottom-right">Read More</button>
             </div>
             <div class="section-with-btn">
                 {
@@ -23,7 +23,7 @@ const Home = (props) => {
                         )
                     })
                 }
-                <button>Read More</button>
+                <button class="btn-bottom-right">Read More</button>
             </div>
             <div>Social Media Link</div>
         </div>
