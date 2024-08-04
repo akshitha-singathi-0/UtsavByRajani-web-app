@@ -9,13 +9,26 @@
   padding-bottom: 2%;
 }
 
-div {
+button {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+}
+
+.header-quote{
+  text-align: center;
+}
+
+.section-with-btn {
   width: 100%;
-  outline: 1px dotted blue;
+  position: relative;
 }
 
 .homeLanding {
   background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 93vw;
 }

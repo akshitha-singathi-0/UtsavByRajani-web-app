@@ -4,18 +4,18 @@ import TestimonialCard from './widgets/TestimonialCard';
 const Home = (props) => {
     return (
         <div>
-            <div class="homeLanding" >
-                <h1 style={{fontFamily: "bethElingston"}}>Bringing Your Dream to Reality.</h1>
+            <div class="homeLanding section-with-btn" >
+                <h1 style={{fontFamily: "bethElingston"}}>Bringing Your Dreams to Reality.</h1>
                 <button>View Gallery</button>
             </div>
             <div class="displaySection">
                 <h3 style={{fontFamily: "bethElingston"}}>Where creativity meets elegance</h3>
             </div>
-            <div>
-                <p>Here is a mini paragraph that tells our story.</p>
+            <div class="section-with-btn">
+                <h3 class="header-quote" style={{fontFamily: "bethElingston"}}>"Here is a quote from the founder" - Rajani, Founder</h3>
                 <button>Read More</button>
             </div>
-            <div>
+            <div class="section-with-btn">
                 {
                     props.data.map((testimony) => {
                         return(
