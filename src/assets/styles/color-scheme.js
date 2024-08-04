@@ -1,2 +1,1 @@
-export const c1 = "#DCD7C5";
-export const c2 = "#faf6e8";
+export const c1 = "#C5C5C5";

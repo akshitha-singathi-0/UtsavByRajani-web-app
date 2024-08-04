@@ -4,7 +4,16 @@ const About = (props) => {
     return (
         <div>
             <h3>Our Story</h3>
-            <p>{props.data.ourStory}</p>
+            <div>
+                <div style={{  backgroundColor: "grey",
+                    float: "left",
+                    height: "50vh",
+                    width: "20vw"}}>
+                </div>
+                <div>
+                    <p>{props.data.ourStory}</p>
+                </div>
+            </div>
         </div>
     );
 }

@@ -5,12 +5,23 @@ const Home = (props) => {
     return (
         <div>
             <div class="homeLanding section-with-btn" >
-                <h1 style={{fontFamily: "bethElingston"}}>Bringing Your Dreams to Reality.</h1>
+                <h1 style={{fontFamily: "bethElingston", fontSize: "550%", color:"white"}}>Bring Your Dreams to Reality.</h1>
                 <button class="btn-bottom-right">View Gallery</button>
             </div>
-            <div class="displaySection">
-                <h3 style={{fontFamily: "bethElingston"}}>Where creativity meets elegance</h3>
+
+            
+            <div class="displaySection" style={{
+                display: "flex",
+                alignItems: "center",
+            }}>
+                <div style={{  backgroundColor: "grey",
+                    float: "left",
+                    height: "20vh",
+                    width: "20vw"}}></div>
+                <div><h3 style={{fontFamily: "bethElingston", 
+                    float: "right"}}>Where creativity meets elegance</h3></div>
             </div>
+
             <div class="section-with-btn">
                 <h3 class="header-quote" style={{fontFamily: "bethElingston"}}>"Here is a quote from the founder" - Rajani, Founder</h3>
                 <button class="btn-bottom-right">Read More</button>

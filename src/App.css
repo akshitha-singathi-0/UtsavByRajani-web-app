@@ -1,5 +1,5 @@
 .App{
-  background-color: #faf6e8;
+  background-color: #f3f3f3;
 }
 .InnerBody {
   display: flex;
@@ -8,9 +8,10 @@
   padding-top: 2%;
   padding-bottom: 2%;
 }
+
 div {
   width: 100%;
-  position: relative;
+  position: relative; 
 }
 
 .btn-bottom-right{
@@ -33,7 +34,9 @@ div {
 }
 
 .displaySection {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  height: 20%;
+  padding-inline: 2%;
   padding-top: 2%;
   padding-bottom: 2%;
 }
