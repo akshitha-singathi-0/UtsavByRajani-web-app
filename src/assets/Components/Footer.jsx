@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
         <footer class="text-center text-lg-start text-muted" style={{backgroundColor:c1}}>
         
-        <section class="">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <div class="container text-center text-md-start mt-5">
             
             <div class="row mt-3">

@@ -3,7 +3,7 @@ import React from 'react';
 const About = (props) => {
     return (
         <div>
-            <h3>Our Story</h3>
+            <h1 class="pageHeader">Our Story</h1>
             <div>
                 <div style={{  backgroundColor: "grey",
                     float: "left",

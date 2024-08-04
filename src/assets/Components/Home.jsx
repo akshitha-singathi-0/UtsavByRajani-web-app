@@ -5,7 +5,7 @@ const Home = (props) => {
     return (
         <div>
             <div class="homeLanding section-with-btn" >
-                <h1 style={{fontFamily: "bethElingston", fontSize: "550%", color:"white"}}>Bring Your Dreams to Reality.</h1>
+                <h1 style={{fontFamily: "happyTime", fontSize: "550%", color:"white"}}>Bring Your Dreams to Reality.</h1>
                 <button class="btn-bottom-right">View Gallery</button>
             </div>
 
@@ -16,14 +16,14 @@ const Home = (props) => {
             }}>
                 <div style={{  backgroundColor: "grey",
                     float: "left",
-                    height: "20vh",
-                    width: "20vw"}}></div>
-                <div><h3 style={{fontFamily: "bethElingston", 
+                    height: "30vh",
+                    width: "30vw"}}></div>
+                <div><h3 style={{fontFamily: "happyTime", 
                     float: "right"}}>Where creativity meets elegance</h3></div>
             </div>
 
             <div class="section-with-btn">
-                <h3 class="header-quote" style={{fontFamily: "bethElingston"}}>"Here is a quote from the founder" - Rajani, Founder</h3>
+                <h3 class="header-quote" style={{fontFamily: "happyTime"}}>"Here is a quote from the founder" - Rajani, Founder</h3>
                 <button class="btn-bottom-right">Read More</button>
             </div>
             <div class="section-with-btn">

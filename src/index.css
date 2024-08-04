@@ -9,8 +9,8 @@ body {
 }
 
 @font-face {
-  font-family: bethElingston;
-  src: url("assets/styles/fonts/Bethany\ Elingston.otf") format("opentype");
+  font-family: happyTime;
+  src: url("assets/styles/fonts/HappyTime.otf") format("opentype");
 }
 
 code {
