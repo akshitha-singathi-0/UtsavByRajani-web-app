@@ -5,7 +5,7 @@ const Home = (props) => {
     return (
         <div>
             <div class="homeLanding section-with-btn" >
-                <h1 style={{fontFamily: "happyTime", fontSize: "550%", color:"white"}}>Bring Your Dreams to Reality.</h1>
+                <h1 style={{fontFamily: "happyTime", fontSize: "650%", color:"white"}}>Bring Your Dreams to Reality.</h1>
                 <button class="btn-bottom-right">View Gallery</button>
             </div>
 
