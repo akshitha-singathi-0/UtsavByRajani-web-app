@@ -22,7 +22,7 @@ const Home = (props) => {
                     float: "right", paddingLeft: "5%"}}>From intimate gathering to grand affairs, our custom decor solutions set the stage for unforgettable celebrations</h3></div>
             </div>
 
-            <div class="section-with-btn" style={{backgroundColor: "grey", paddingTop: "5%", paddingBottom: "5%"}}>
+            <div class="section-with-btn" style={{backgroundColor: "#E2E2E2", paddingTop: "5%", paddingBottom: "5%"}}>
                 <h3 class="header-quote" style={{fontFamily: "happyTime", 
                     paddingInline: "5%"}}>"At Utsav by Rajani, we believe every moment deserves to be extraordinary--our team is passionate to ensure your memories are all the more magical."<br></br>- Rajani, Founder</h3>
                 <button class="btn-bottom-right">Read More</button>

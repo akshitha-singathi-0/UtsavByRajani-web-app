@@ -1,16 +1,9 @@
 import React from 'react';
 import ResponsiveGallery from 'react-responsive-gallery';
-
+import image_data from '../data/image_data.json';
+/*
 const media=[
-{
-src: 'https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445_960_720.jpg'
-},
-{
-src: 'https://cdn.pixabay.com/photo/2019/06/12/15/07/cat-4269479_960_720.jpg'
-},
-{
-src: 'https://cdn.pixabay.com/photo/2016/12/04/21/58/rabbit-1882699_960_720.jpg'
-},
+
 {
 src: 'https://cdn.pixabay.com/photo/2014/07/08/12/36/bird-386725_960_720.jpg'
 },
@@ -33,7 +26,7 @@ src: 'https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg'
 src: 'https://cdn.pixabay.com/photo/2019/03/09/17/30/horse-4044547_960_720.jpg'
 }
 ];
-
+*/
 
 const Gallery = () => {
     return (
@@ -54,7 +47,7 @@ const Gallery = () => {
                 </button>
             </div>
             <div>
-                <ResponsiveGallery media={media}></ResponsiveGallery>
+                <ResponsiveGallery media={image_data}></ResponsiveGallery>
             </div>
         </div>
     );
