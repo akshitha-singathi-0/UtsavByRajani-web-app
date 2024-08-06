@@ -1,27 +1,64 @@
-import React from 'react';
+import React, {useState} from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [stateMessage, setStateMessage] = useState(null);
+
+    const sendEmail = (e) => {
+    e.persist();
+    e.preventDefault();
+    setIsSubmitting(true);
+    emailjs
+      .sendForm(
+        "service_eb19i4f",
+        "template_w0hhfcj",
+        e.target,
+        "je9VAfS_kmTCotlTC"
+      )
+      .then(
+        (result) => {
+          setStateMessage('Message sent!');
+          setIsSubmitting(false);
+          setTimeout(() => {
+            setStateMessage(null);
+          }, 5000); // hide message after 5 seconds
+        },
+        (error) => {
+          setStateMessage('Something went wrong, please try again later');
+          setIsSubmitting(false);
+          setTimeout(() => {
+            setStateMessage(null);
+          }, 5000); // hide message after 5 seconds
+        }
+      );
+    
+    // Clears the form after sending the email
+    e.target.reset();
+    };
+
     return (
         <div>
             <h1 class="pageHeader">Contact</h1>
-            <form>
+            <form onSubmit={sendEmail}>
                 <div class="form-group">
-                    <label for="inputName">Name</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Name"></input>
+                    <label for="from_name">Name</label>
+                    <input name="from_name" type="text" class="form-control" id="from_name" placeholder="Name"></input>
                 </div>
                 <div class="form-group">
-                    <label for="inputEmail">Email address</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="abc@gmail.com"></input>
+                    <label for="email">Email address</label>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="abc@gmail.com"></input>
                 </div>
                 <div class="form-group">
-                    <label for="inputPhoneNumber">Phone</label>
-                    <input type="text" class="form-control" id="inputPhoneNumber" placeholder="(000)-000-0000"></input>
+                    <label for="number">Phone</label>
+                    <input name="number" type="text" class="form-control" id="number" placeholder="(000)-000-0000"></input>
                 </div>
                 <div class="form-group">
-                    <label for="inputInquiry">Inquiry</label>
-                    <input type="text" class="form-control" id="inputInquiry"></input>
+                    <label for="message">Inquiry</label>
+                    <input name="message" type="text" class="form-control" id="message"></input>
                 </div>
-                <button type="submit">Submit</button>
+                <input type="submit" value="Send" disabled={isSubmitting} />
+                {stateMessage && <p>{stateMessage}</p>}
             </form>
         </div>
     );
