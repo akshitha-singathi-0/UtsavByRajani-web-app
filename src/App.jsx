@@ -8,7 +8,6 @@ import Contact from './assets/Components/Contact';
 import Footer from './assets/Components/Footer';
 
 import testimony_data from './assets/data/testimonies.json';
-import about_data from './assets/data/about.json';
 
 function App() {
   return (
@@ -17,7 +16,7 @@ function App() {
       <div class="InnerBody">
         <Routes>
           <Route path="/" element={<Home data={testimony_data}/>}></Route>
-          <Route path="/about" element={<About data={about_data}/>}></Route>
+          <Route path="/about" element={<About/>}></Route>
           <Route path="/gallery" element={<Gallery/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
         </Routes>
