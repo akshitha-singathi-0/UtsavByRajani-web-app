@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import ResponsiveGallery from 'react-responsive-gallery';
+import { ColumnsPhotoAlbum } from "react-photo-album";
+import "react-photo-album/columns.css";
 import image_data from '../data/image_data.json';
+
+const photos = [
+  { src: "/imgs/one.jpg", width: 800, height: 600 },
+  { src: "/imgs/two.jpg", width: 1600, height: 900 },
+  { src: "/imgs/three.jpg", width: 1600, height: 900 },
+];
 
 const Gallery = () => {
     
@@ -32,7 +40,7 @@ const Gallery = () => {
                 </button>
             </div>
             <div>
-                <ResponsiveGallery media={filteredData}></ResponsiveGallery>
+                <ColumnsPhotoAlbum photos={photos} columns={3} />
             </div>
         </div>
     );
