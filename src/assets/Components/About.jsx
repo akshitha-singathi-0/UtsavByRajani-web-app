@@ -6,7 +6,7 @@ const About = () => {
             <h1 class="pageHeader">Our Story</h1>
             <div>
                 <div style={{ float: "left", height: "50vh", width: "20vw"}}>
-                    <div style={{  backgroundColor: "grey",
+                    <div style={{  backgroundImage: `url(${'../imgs/profile.jpg'})`,
                         height: "50vh",
                         width: "18vw"}}>
 

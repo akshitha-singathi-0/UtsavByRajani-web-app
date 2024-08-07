@@ -1,24 +1,17 @@
 import React, { useState } from 'react';
-import ResponsiveGallery from 'react-responsive-gallery';
 import { ColumnsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/columns.css";
 import image_data from '../data/image_data.json';
 
-const photos = [
-  { src: "/imgs/one.jpg", width: 800, height: 600 },
-  { src: "/imgs/two.jpg", width: 1600, height: 900 },
-  { src: "/imgs/three.jpg", width: 1600, height: 900 },
-];
-
 const Gallery = () => {
     
     const [selectedFilter, setSelectedFilter] = useState('all');
-    const [filteredData, setFilteredData] = useState(image_data);
+    const [filteredData, setFilteredData] = useState(image_data.map(item => item.pic));
 
     const handleSelectedFilter = (filter) => {
         setSelectedFilter(filter);
-        const data_after_filtering = filter === 'all' ? image_data : image_data.filter(item => item.eventType === filter);
-        setFilteredData(data_after_filtering);
+        const data_after_filtering = (filter === 'all') ? image_data : image_data.filter(item => item.eventType === filter);
+        setFilteredData(data_after_filtering.map(item => item.pic));    
     }
 
     return (
@@ -40,7 +33,8 @@ const Gallery = () => {
                 </button>
             </div>
             <div>
-                <ColumnsPhotoAlbum photos={photos} columns={3} />
+                { console.log(filteredData + " === ") }
+                <ColumnsPhotoAlbum photos={filteredData} columns={3} />
             </div>
         </div>
     );
