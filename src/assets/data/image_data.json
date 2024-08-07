@@ -10,6 +10,21 @@
     },
 
     {
+        "src": "https://cdn.pixabay.com/photo/2019/06/12/15/07/cat-4269479_960_720.jpg",
+        "eventType": "wedding"
+    },
+
+    {
+        "src": "https://cdn.pixabay.com/photo/2016/12/04/21/58/rabbit-1882699_960_720.jpg",
+        "eventType": "party"
+    }, 
+
+    {
+        "src": "https://cdn.pixabay.com/photo/2016/12/04/21/58/rabbit-1882699_960_720.jpg",
+        "eventType": "other"
+    },
+
+    {
         "src": "https://cdn.pixabay.com/photo/2016/12/04/21/58/rabbit-1882699_960_720.jpg",
         "eventType": "party"
     }
